@@ -1,0 +1,47 @@
+<!-- Plugin Configuration File. Read more: https://plugins.jetbrains.com/docs/intellij/plugin-configuration-file.html -->
+<idea-plugin>
+    <!-- Unique identifier of the plugin. It should be FQN. It cannot be changed between the plugin versions. -->
+    <id>studio.crows.relativegoto</id>
+
+    <!-- Public plugin name should be written in Title Case.
+         Guidelines: https://plugins.jetbrains.com/docs/marketplace/plugin-overview-page.html#plugin-name -->
+    <name>Relative Go To</name>
+
+    <!-- A displayed Vendor name or Organization ID displayed on the Plugins Page. -->
+    <vendor email="kontakt@mskowrom.pl" url="https://www.crows.studio">Crows Studio</vendor>
+
+    <!-- Description of the plugin displayed on the Plugin Page and IDE Plugin Manager.
+         Simple HTML elements (text formatting, paragraphs, and lists) can be added inside of <![CDATA[ ]]> tag.
+         Guidelines: https://plugins.jetbrains.com/docs/marketplace/plugin-overview-page.html#plugin-description -->
+    <description><![CDATA[
+    Relative Go To allows you to go to lines relative to your current caret position, instead of going to absolute lines.
+  ]]></description>
+
+    <!-- Product and plugin compatibility requirements.
+         Read more: https://plugins.jetbrains.com/docs/intellij/plugin-compatibility.html -->
+    <depends>com.intellij.modules.platform</depends>
+
+    <!-- Extension points defined by the plugin.
+         Read more: https://plugins.jetbrains.com/docs/intellij/plugin-extension-points.html -->
+    <extensions defaultExtensionNs="com.intellij">
+
+    </extensions>
+
+    <actions>
+        <action
+                id="relativegoto.actions.jumpDown"
+                class="studio.crows.relativegoto.actions.DownJumpAction"
+                text="Jump Down to Relative Line"
+                description="Jump to the entered relative line">
+            <keyboard-shortcut first-keystroke="alt g" keymap="$default" />
+        </action>
+
+        <action
+                id="relativegoto.actions.jumpUp"
+                class="studio.crows.relativegoto.actions.UpJumpAction"
+                text="Jump Up to Relative Line"
+                description="Jump to the entered relative line (prefixed with -)">
+            <keyboard-shortcut first-keystroke="ctrl alt g" keymap="$default" />
+        </action>
+    </actions>
+</idea-plugin>
