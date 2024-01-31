@@ -54,7 +54,7 @@ Negative numbers go **up** relative to the current caret position
 2. Refer to [Install plugin from disk](https://www.jetbrains.com/help/idea/managing-plugins.html#install_plugin_from_disk)
 
 ### Installation from Marketplace
-You can install this plugin directly from [JetBrains Marketplace](#)
+You can install this plugin directly from [JetBrains Marketplace](https://plugins.jetbrains.com/plugin/23680-relative-go-to)
 
 # Contributing
 Feel free to create issues or pull requests on the topic of fixes

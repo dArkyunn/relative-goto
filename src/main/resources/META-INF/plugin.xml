@@ -15,6 +15,17 @@
          Guidelines: https://plugins.jetbrains.com/docs/marketplace/plugin-overview-page.html#plugin-description -->
     <description><![CDATA[
     Relative Go To allows you to go to lines relative to your current caret position, instead of going to absolute lines.
+
+    This plugin comes with two default keybindings
+
+    1. Go `n` lines down: <kbd>Alt</kbd> + <kbd>G</kbd> - Opens a Go To dialog
+    2. Go `n` lines up: <kbd>Alt</kbd> + <kbd>Shift</kbd> + <kbd>G</kbd> - Opens a Go To dialog with `-` prefilled
+
+    (Note that tose keybindings can be freely modified by going to `Settings` > `Keymap` > `Plugins` > `Relative Go To`)
+
+    Positive numbers go **down** relative to the current caret position
+
+    Negative numbers go **up** relative to the current caret position
   ]]></description>
 
     <!-- Product and plugin compatibility requirements.
